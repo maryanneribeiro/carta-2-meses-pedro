@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff0f5;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+   }
+   /* Caixa da carta */
+   .carta {
+    background: white;
+    padding: 30px;
+    margin: 60px auto;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+    border: 3px solid #ff69b4;
+    text-align: left;
+   }
+   .carta h1 {
+    text-align: center;
+    color: #ff1493;
+   }
+   .carta p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+   }
+   .assinatura {
+    text-align: right;
+    font-weight: bold;
+    color: #ff1493;
+   }
+   .my-photo {
+    border-radius: 15px;
+    width: 100%;
+    margin:10px 0;
+   }
+   /* Corações caindo */
+   .coracao {
+    position: fixed;
+    top: -10px;
+    font-size: 24px;
+    color: red;
+    animation: cair linear forwards;
+    z-index: 999;
+   }
+   @keyframes cair {
+    to  {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+    }
+}
